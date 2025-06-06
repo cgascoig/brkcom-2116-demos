@@ -2,7 +2,7 @@ variable "intersight_api_keyid" {
   type = string
 }
 
-variable "intersight_secretkey" {
+variable "intersight_api_key" {
   type = string
 }
 
