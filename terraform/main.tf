@@ -4,10 +4,11 @@ data "intersight_organization_organization" "default" {
 
 locals {
   orgMoid = data.intersight_organization_organization.default.results[0].moid
+  prefix = "cg-clus25-"
 }
 
 resource "intersight_ntp_policy" "ntp1" {
-  name    = "demo_ntp"
+  name    = "${local.prefix}demo_ntp"
   enabled = true
   ntp_servers = [
     "10.10.10.10",
