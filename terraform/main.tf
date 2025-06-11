@@ -14,7 +14,7 @@ resource "intersight_ntp_policy" "ntp1" {
     "10.10.10.10",
     "10.10.10.11",
     "10.10.10.12",
-    "10.10.10.13"
+    "10.10.10.14"
   ]
   organization {
     moid   = local.orgMoid
